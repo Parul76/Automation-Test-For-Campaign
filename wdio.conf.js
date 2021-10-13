@@ -97,7 +97,7 @@ exports.config = {
     baseUrl: 'https://www.volvocars.com/intl/v/car-safety/a-million-more',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 1000000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -132,9 +132,19 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    // ...
+   // ...
+   reporters: [ 'spec'],
+   // ...
 
-
+ // ...
+  
+ reporters: [['allure', {
+    outputDir: 'allure-results',
+    disableWebdriverStepsReporting: true,
+    disableWebdriverScreenshotsReporting: true,
+}]],
+// ...
     
     //
     // Options to be passed to Mocha.

@@ -1,4 +1,5 @@
 const CampaignWebpage = require('../pageobjects/CampaignWebpage');
+const allureReporter = require('@wdio/allure-reporter').default
 
 describe('my campaign website', () => {
     it('should do some assertions', async () => {
@@ -7,5 +8,9 @@ describe('my campaign website', () => {
     })
 })
 
-
+describe('Suite', () => {
+    it('Case', () => {
+        allureReporter.addFeature('Feature')
+    })
+})
 
