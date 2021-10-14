@@ -1,4 +1,4 @@
-const CampaignWebpage = require('../pageobjects/CampaignWebpage');
+const campaignWebpage = require('../pageobjects/campaignWebpage');
 const allureReporter = require('@wdio/allure-reporter')
 
 afterEach(async() => await browser.execute('window.scrollTo(0, 0);', []));
