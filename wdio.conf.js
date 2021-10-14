@@ -1,4 +1,7 @@
+const allure = require('allure-commandline')
 exports.config = {
+ 
+   
     //
     // ====================
     // Runner Configuration
@@ -27,6 +30,8 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+
+    
     //
     // ============
     // Capabilities
@@ -145,6 +150,7 @@ exports.config = {
     disableWebdriverScreenshotsReporting: true,
 }]],
 // ...
+
     
     //
     // Options to be passed to Mocha.
@@ -168,6 +174,29 @@ exports.config = {
      */
     // onPrepare: function (config, capabilities) {
     // },
+
+    //    // ...
+    //    onComplete: function() {
+    //     const reportError = new Error('Could not generate Allure report')
+    //     const generation = allure(['generate', 'allure-results', '--clean'])
+    //     return new Promise((resolve, reject) => {
+    //         const generationTimeout = setTimeout(
+    //             () => reject(reportError),
+    //             100000)
+
+    //         generation.on('exit', function(exitCode) {
+    //             clearTimeout(generationTimeout)
+
+    //             if (exitCode !== 0) {
+    //                 return reject(reportError)
+    //             }
+
+    //             console.log('Allure report successfully generated')
+    //             resolve()
+    //         })
+    //     })
+    // }
+    // // ...
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -189,6 +218,8 @@ exports.config = {
      */
     // beforeSession: function (config, capabilities, specs, cid) {
     // },
+
+    
     /**
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.
@@ -198,6 +229,7 @@ exports.config = {
      */
     // before: function (capabilities, specs) {
     // },
+
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
