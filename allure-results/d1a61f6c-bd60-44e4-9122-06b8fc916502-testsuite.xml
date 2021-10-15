@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634288724438' stop='1634288728357'>
+    <name>Invalid test cases for my campaign website</name>
+    <title>Invalid test cases for my campaign website</title>
+    <test-cases>
+        <test-case start='1634288724439' status='failed' stop='1634288728356'>
+            <name>should do some assertions for success</name>
+            <title>should do some assertions for success</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expect(received).toMatch(expected)
+                
+                Matcher error: received value must be a string
+                
+                Received has type:  object
+                Received has value: {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"acceptInsecureCerts": true, "browserName": "chrome", "browserVersion": "94.0.4606.81", "chrome": {"chromedriverVersion": "94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})", "userDataDir": "C:\\Users\\Parul\\AppData\\Local\\Temp\\scoped_dir35280_1129845837"}, "goog:chromeOptions": {"debuggerAddress": "localhost:64772"}, "networkConnectionEnabled": false, "pageLoadStrategy": "normal", "platformName": "windows", "proxy": {}, "setWindowRect": true, "strictFileInteractability": false, "timeouts": {"implicit": 0, "pageLoad": 300000, "script": 30000}, "unhandledPromptBehavior": "dismiss and notify", "webauthn:extension:credBlob": true, "webauthn:extension:largeBlob": true, "webauthn:virtualAuthenticators": true}, "config": {"$0": "node_modules\\@wdio\\cli\\bin\\wdio.js", "_": ["run"], "after": [], "afterCommand": [], "afterFeature": [], "afterHook": [], "afterScenario": [], "afterSession": [], "afterStep": [], "afterSuite": [], "afterTest": [], "autoCompileOpts": {"autoCompile": true, "babelOpts": {}, "tsNodeOpts": {"transpileOnly": true}}, "bail": 0, "baseUrl": "https://www.volvocars.com/intl/v/car-safety/a-million-more", "before": [], "beforeCommand": [], "beforeFeature": [], "beforeHook": [], "beforeScenario": [], "beforeSession": [], "beforeStep": [], "beforeSuite": [], "beforeTest": [], "config-path": "./wdio.conf.js", "connectionRetryCount": 3, "connectionRetryTimeout": 120000, "cucumberFeaturesWithLineNumbers": [], "cucumberOpts": {"timeout": 10000}, "exclude": [], "excludeDriverLogs": [], "execArgv": [], "filesToWatch": [], "framework": "mocha", "ignoredWorkerServices": [], "jasmineOpts": {"defaultTimeoutInterval": 10000}, "logLevel": "info", "logLevels": {}, "maxInstances": 10, "maxInstancesPerCapability": 100, "mochaOpts": {"timeout": 60000, "ui": "bdd"}, "onComplete": [], "onPrepare": [], "onReload": [], "onWorkerStart": [], "outputDir": undefined, "reporterSyncInterval": 100, "reporterSyncTimeout": 5000, "reporters": [["allure", {"disableWebdriverScreenshotsReporting": true, "disableWebdriverStepsReporting": true, "outputDir": "allure-results"}]], "runner": "local", "runnerEnv": {}, "services": ["chromedriver"], "specFileRetries": 0, "specFileRetriesDeferred": false, "specFileRetriesDelay": 0, "specs": ["./test/specs/**/*.js"], "suites": {"otherFeature": [], "specs": ["./test/specs/basicTest.js", "./test/specs/basictest.failure.js"]}, "waitforInterval": 500, "waitforTimeout": 1000000}, "overwriteCommand": [Function anonymous], "sessionId": "748abb420267ae0fc503bdbe186082cd"}</message>
+                <stack-trace>Error: expect(received).toMatch(expected)
+                
+                Matcher error: received value must be a string
+                
+                Received has type:  object
+                Received has value: {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"acceptInsecureCerts": true, "browserName": "chrome", "browserVersion": "94.0.4606.81", "chrome": {"chromedriverVersion": "94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})", "userDataDir": "C:\\Users\\Parul\\AppData\\Local\\Temp\\scoped_dir35280_1129845837"}, "goog:chromeOptions": {"debuggerAddress": "localhost:64772"}, "networkConnectionEnabled": false, "pageLoadStrategy": "normal", "platformName": "windows", "proxy": {}, "setWindowRect": true, "strictFileInteractability": false, "timeouts": {"implicit": 0, "pageLoad": 300000, "script": 30000}, "unhandledPromptBehavior": "dismiss and notify", "webauthn:extension:credBlob": true, "webauthn:extension:largeBlob": true, "webauthn:virtualAuthenticators": true}, "config": {"$0": "node_modules\\@wdio\\cli\\bin\\wdio.js", "_": ["run"], "after": [], "afterCommand": [], "afterFeature": [], "afterHook": [], "afterScenario": [], "afterSession": [], "afterStep": [], "afterSuite": [], "afterTest": [], "autoCompileOpts": {"autoCompile": true, "babelOpts": {}, "tsNodeOpts": {"transpileOnly": true}}, "bail": 0, "baseUrl": "https://www.volvocars.com/intl/v/car-safety/a-million-more", "before": [], "beforeCommand": [], "beforeFeature": [], "beforeHook": [], "beforeScenario": [], "beforeSession": [], "beforeStep": [], "beforeSuite": [], "beforeTest": [], "config-path": "./wdio.conf.js", "connectionRetryCount": 3, "connectionRetryTimeout": 120000, "cucumberFeaturesWithLineNumbers": [], "cucumberOpts": {"timeout": 10000}, "exclude": [], "excludeDriverLogs": [], "execArgv": [], "filesToWatch": [], "framework": "mocha", "ignoredWorkerServices": [], "jasmineOpts": {"defaultTimeoutInterval": 10000}, "logLevel": "info", "logLevels": {}, "maxInstances": 10, "maxInstancesPerCapability": 100, "mochaOpts": {"timeout": 60000, "ui": "bdd"}, "onComplete": [], "onPrepare": [], "onReload": [], "onWorkerStart": [], "outputDir": undefined, "reporterSyncInterval": 100, "reporterSyncTimeout": 5000, "reporters": [["allure", {"disableWebdriverScreenshotsReporting": true, "disableWebdriverStepsReporting": true, "outputDir": "allure-results"}]], "runner": "local", "runnerEnv": {}, "services": ["chromedriver"], "specFileRetries": 0, "specFileRetriesDeferred": false, "specFileRetriesDelay": 0, "specs": ["./test/specs/**/*.js"], "suites": {"otherFeature": [], "specs": ["./test/specs/basicTest.js", "./test/specs/basictest.failure.js"]}, "waitforInterval": 500, "waitforTimeout": 1000000}, "overwriteCommand": [Function anonymous], "sessionId": "748abb420267ae0fc503bdbe186082cd"}
+                    at Context.&lt;anonymous> (C:\Users\Parul\nodejs\Automation-Test-For-Campaign\test\specs\basictest.failure.js:7:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

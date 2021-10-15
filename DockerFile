@@ -4,4 +4,4 @@ COPY ./ /app/
 
 RUN npm install
 
-CMD npx wdiox
+CMD npx wdio run ./wdio.conf.js

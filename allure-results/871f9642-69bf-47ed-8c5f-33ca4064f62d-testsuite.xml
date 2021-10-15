@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634288724434' stop='1634288726877'>
+    <name>Valid test cases for my campaign website</name>
+    <title>Valid test cases for my campaign website</title>
+    <test-cases>
+        <test-case start='1634288724434' status='passed' stop='1634288726876'>
+            <name>should do some assertions for failure</name>
+            <title>should do some assertions for failure</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
