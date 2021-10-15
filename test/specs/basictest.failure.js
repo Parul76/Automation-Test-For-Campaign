@@ -6,4 +6,5 @@ describe('Invalid test cases for my campaign website', () => {
         await browser.url('https://www.volvocars.com/intl/v/car-safety/a-million-more')
         await expect(browser).toMatch('fail')
     })
+    
  });
