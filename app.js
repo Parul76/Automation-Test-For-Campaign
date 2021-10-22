@@ -7,11 +7,6 @@ waitforTimeout: 1000000,
 connectionRetryTimeout: 120000,
 connectionRetryCount: 3,
 services: ['chromedriver'],
-reporters: [[ 'spec',{
-outputDir: 'spec-results',
-disableWebdriverStepsReporting: true,
-disableWebdriverScreenshotsReporting: true,
-}]],
 reporters: [['allure', {
 outputDir: 'allure-results',
 disableWebdriverStepsReporting: true,
