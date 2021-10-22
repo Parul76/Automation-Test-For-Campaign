@@ -33,9 +33,5 @@ suites: {
         maxInstances: 10,
         browserName: 'chrome',
     }],
-   
-    mochaOpts: {
-        ui: 'bdd',
-        timeout: 60000
-    },
+
 }
