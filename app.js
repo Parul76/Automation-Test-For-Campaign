@@ -1,11 +1,9 @@
 exports.config = {
  
 framework: 'mocha',
-bail: 0,
 baseUrl: 'https://www.volvocars.com/intl/v/car-safety/a-million-more',
 waitforTimeout: 1000000,
 connectionRetryTimeout: 120000,
-connectionRetryCount: 3,
 services: ['chromedriver'],
 reporters: [['allure', {
 outputDir: 'allure-results',
